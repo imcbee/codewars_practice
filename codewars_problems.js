@@ -56,3 +56,17 @@ function powersOfTwo(n){
     
     return arr
   }
+
+// ? Descending Order
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+  function descendingOrder(n){
+    //...
+    if(Math.sign(n) == "-1") return null
+    if(n === 0) return 0
+    if(n === 1) return 1
+    let arr = n.toString().split('')
+    
+    let newOrder = arr.sort((a, b) => b-a).join('')
+    return parseInt(newOrder)
+    
+  }

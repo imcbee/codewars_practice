@@ -17,3 +17,38 @@ def update_light(current):
 # Complete the solution so that it reverses the string passed into it.
 def solution(string):
     return string[::-1]
+
+# Sum Mixed Array
+# Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+# Return your answer as a number.
+def sum_mix(arr):
+    
+    answer = 0
+    
+    for num in arr:
+        answer += int(num)
+    
+    return answer
+
+# Removing Elements
+# Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+def remove_every_other(my_list):
+    keep = []
+    dont_keep = []
+    
+    for idx, word in enumerate(my_list):
+        if idx % 2 ==0:
+            keep.append(word)
+        else:
+            dont_keep.append(word)
+            
+    return keep
+
+# Even or Odd
+# Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+def even_or_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
