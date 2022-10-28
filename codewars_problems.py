@@ -52,3 +52,33 @@ def even_or_odd(number):
         return "Even"
     else:
         return "Odd"
+
+# Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+def count_sheeps(sheep):
+    total = 0
+    false = 0
+    for count in sheep:
+        if count == None:
+            continue
+        if count == True:
+            total += 1
+        else:
+            false += 1
+    return total
+
+# Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+def greet(name):
+    return f"Hello, {name} how are you doing today?"
+
+# Very simple, given an integer or a floating-point number, find its opposite.
+
+# Examples:
+
+# 1: -1
+# 14: -14
+# -34: 34
+def opposite(number):
+    if(number < 0):
+        return float(abs(number))
+    else:
+        return float(-abs(number))
